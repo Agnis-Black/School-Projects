@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Room Information</title>
+    <link rel="stylesheet" href="global.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 2em;
+        cursor: default;
+      }
+
+      .box h2 {
+        color: white;
+      }
+
+      .logo {
+        font-size: 2em;
+        cursor: default;
+      }
+
+      .navigation a:hover {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+        background: #ccc;
+      }
+
+      .container {
+        margin: 50px auto;
+        width: 80%;
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        background: #4c79da;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      .box img {
+        max-width: 40%;
+        max-height: 40%;
+      }
+
+      .box h2 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+
+      .rating {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        display: inline-block;
+        vertical-align: top;
+        width: 20vw;
+        height: 10vh;
+      }
+
+      .rating img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .rating h2 {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      .centered-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        transform: translateY(-40%);
+      }
+
+      .centered-box span {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Booth 2</h1>
+
+      <header>
+        <h5 class="logo">Silent Spaces Group 2</h5>
+        <nav class="navigation">
+            <a href="homePage.htm">Home</a>
+            <a href="detailedRoomInformation.html">Rooms</a>
+            <a href="buildingRoomsList.html">RoomsFeatures</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+      </header>
+
+      <div class="centered-box">
+        <p>Location: <span>SELE 2nd Floor</span></p>
+      </div>
+
+      <div class="grid">
+        <div class="box">
+          <img src="./images/playButton.png" alt="Placeholder image" />
+          <h2>Listen to noise</h2>
+        </div>
+        <div class="box">
+          <img src="./images/people.png" alt="Placeholder image" />
+          <h2># People: 12</h2>
+        </div>
+        <div class="box">
+          <img src="./images/plug.png" alt="Placeholder image" />
+          <h2>Plugs: 4/4 AC | Usb: 0</h2>
+        </div>
+        <div class="box">
+          <img src="./images/table.png" alt="Placeholder image" />
+          <h2>Tables: 1</h2>
+        </div>
+        <div class="box">
+          <img src="./images/couch.png" alt="Placeholder image" />
+          <h2>Couches: 2</h2>
+        </div>
+        <div class="box">
+          <img src="./images/chair.png" alt="Placeholder image" />
+          <h2>Chairs: none</h2>
+        </div>
+
+        <div class="box">
+          <img src="./images/wifi4.png" alt="Placeholder image" />
+          <h2>Wifi: strong (90%)</h2>
+        </div>
+
+        <div class="box">
+          <img src="./images/cellular.png" alt="Placeholder image" />
+          <h2>Cellular Data: Poor (20%)</h2>
+        </div>
+
+        <div class="box">
+          <img src="./images/computer.png" alt="Placeholder image" />
+          <h2>Computers: none</h2>
+        </div>
+      </div>
+
+      <div class="rating">
+        <img src="./images/stars.png" alt="Placeholder image" />
+        <h2>Total Quality Rating: 5/5</h2>
+      </div>
+    </div>
+  </body>
+</html>

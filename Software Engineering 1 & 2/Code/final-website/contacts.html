@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silent Spaces - Contacts</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+
+    <style>
+
+        body{
+            background: linear-gradient(to bottom, hsl(187, 49%, 68%), #d1e2d9);
+
+        }
+        *{
+            color: rgb(50, 50, 95);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2{
+            text-align: center;
+           
+
+        }
+        .contact-bubble {
+            background-color: #4f76a3;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 2%;
+            margin: 10px;
+            margin-left: 33%;
+            max-width: 35%;
+            height: 15vh;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact-bubble h1 {
+            font-size: 10vw;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact-bubble ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-bubble li {
+            height: 20%;
+            font-size: 1.8ex;
+            color: #fff;
+            margin-bottom: 5%;
+        }
+
+        .contact-bubble strong {
+            font-weight: bold;
+        }
+
+        .contact-bubble a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+        }
+
+        .contact-bubble a:hover {
+            opacity: 0.8;
+        }
+        .developer {
+            margin: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .developer img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .developer h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .developer p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .developer-message {
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            margin-bottom: 40px;
+            max-width: 50%;
+        }
+
+        .developer-message img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 40px;
+        }
+
+        .developer-message p {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .developer-message strong {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffffe2;
+            margin-bottom: 10px;
+        } 
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="./images/logo.png" alt="Blank Image">
+            <h1>Silent Spaces</h1>
+        </div>
+        
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-bubble">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><strong>Aqsa Arif</strong>: <a href="mailto:aarif20@uic.edu">aarif20@uic.edu</a></li>
+                <li><strong>Lucy Harck</strong>: <a href="mailto:lharck2@uic.edu">  lharck2@uic.edu</a></li>
+                <li><strong>Alberto Ramirez</strong>: <a href="mailto:aramir88@uic.edu">aramir88@uic.edu</a></li>
+                <li><strong>Fernando Mantilla</strong>: <a href="mailto:fmant2@uic.edu">fmant2@uic.edu</a></li>
+            </ul>
+        </div>
+        <h2>Messages from the Developers</h2>
+        <div class="developer-message">
+            <img src="./images/aqsa.png" alt="Aqsa Arif" />
+            <p>
+            <strong>
+                Aqsa Arif:
+                </strong> 
+                "I had a great time working on this project and collaborating with my team. 
+                I learned so much about web development and look forward to using my skills on future projects."
+            </p>
+        </div>
+        <div class="developer-message">
+            <img src="./images/lucy.png" alt="Lucy Harck" />
+            <p>
+            <strong>
+                Lucy Harck:
+                </strong>
+                "Working on this project was a valuable experience for me. 
+                 I enjoyed the challenge of designing and developing a website that met the client's needs, 
+                 and I learned a lot in the process."
+            </p>
+        </div>
+        <div class="developer-message">
+            <img src="./images/alberto.png" alt="Alberto Ramirez" />
+            <p>
+            <strong>
+                Alberto Ramirez:
+                </strong> 
+            "I am proud of what our team accomplished with this website. 
+            We worked well together and created a product that we can all be proud of."
+            </p>
+        </div>
+        <div class="developer-message">
+            <img src="./images/fernando.png" alt="Fernando Mantilla" />
+            <p>
+            <strong>
+                Fernando Mantilla:
+                </strong> 
+                "I am grateful for the opportunity to work on this project and develop my skills in web development.
+                 It was a challenging but rewarding experience, and I am proud of what we accomplished as a team."
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>

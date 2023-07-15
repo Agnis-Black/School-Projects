@@ -1,0 +1,70 @@
+.leftPanel{
+    background-color:  #A8DADC;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center; 
+    justify-content:space-evenly;
+    flex-direction: column;
+      background: linear-gradient(to bottom, #4facfe, #00f2fe);
+
+    
+}
+.rightPanel{
+    background-color: #d1e2d9;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom, hsl(187, 49%, 68%), #d1e2d9);
+    display: flex;
+    align-items: center; 
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+
+.image {
+    width: 60%;
+    height: 45%;   
+}
+
+main div h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #F1FAEE;
+    text-align: center;
+    max-width: 80%;
+
+}
+
+.description {
+    max-width: 60%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-size: 80%;
+    line-height: 1.5;
+    text-align: center;
+    color: #444444;
+    letter-spacing: .5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    margin-top: 50px;
+    margin-left: -8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    width: 100vw;
+    flex-basis: 0px;
+    background-color: rgb(201, 67, 67);
+    overflow: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

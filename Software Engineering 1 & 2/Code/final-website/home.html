@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/aqsa.css">
+
+    <title>My Webpage</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="./images/logo.png" alt="Blank Image">
+            <h1>Silent Spaces</h1>
+        </div>
+        
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="leftPanel">
+            <img class="image" src="images/library.png" alt="Library">
+            <h2>Discover the best spots on campus for you!</h2>
+            <div class="description">
+                College life can be hectic and overwhelming, but it doesn't have to be. With our website, you can easily find quiet spots on campus where you can relax, focus, and recharge. <br>
+                Whether you're studying for an exam or simply need to take a break, our website makes it easy to find the perfect spot for your needs. <br>
+                Sign in now and discover the perfect location for you!.
+            </div>
+        </div>
+
+        <div class="rightPanel">
+            
+            <!-- Aqsa's Login code -->
+            <section class="hero">
+                <div class="content">
+                  <h3>Welcome</h3>
+                  <h1>Please login to your below</h1>
+                  <div class="wrapper">
+                    
+          
+                   <div class="form-box register">
+                      <h2>Registration</h2>
+                      <form action="#">
+                        <div class="input-box">
+                          <span class="icon"
+                            ><ion-icon name="person-outline"></ion-icon
+                          ></span>
+                          <input type="text" required />
+                          <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                          <span class="icon"
+                            ><ion-icon name="mail-outline"></ion-icon
+                          ></span>
+                          <input type="email" required />
+                          <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                          <span class="icon"
+                            ><ion-icon name="lock-closed-outline"></ion-icon
+                          ></span>
+                          <input type="password" required />
+                          <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                          <label><input type="checkbox" />I agree to the terms & conditions
+                            </label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-register">
+                          <p>
+                            Already have an account?
+                            <a href="#" class="login-link">Login </a>
+                          </p>
+                        </div>
+                      </form>
+                    </div>
+           
+                    <div class="form-box login">
+                      <h2>Login</h2>
+                      <form action="#">
+                          <div class="input-box">
+                              <span class="icon">
+                                  <ion-icon name="mail-outline"></ion-icon>
+                              </span>
+                              <input type="email" required />
+                              <label>Email</label>
+                          </div>
+                          <div class="input-box">
+                              <span class="icon">
+                                  <ion-icon name="lock-closed-outline"></ion-icon>
+                              </span>
+                              <input type="password" required />
+                              <label>Password</label>
+                          </div>
+                          <div class="remember-forgot">
+                              <label><input type="checkbox" />Remember me</label>
+                              <a href="#">Forgot Password?</a>
+                          </div>
+                          <button id ="btnn" type="submit" class="btn" onclick="goToURL()" >Login</button>
+                          <div class="login-register">
+                              <p>
+                                  Don't have an account?
+                                  <a href="#" class="register-link"> Register </a>
+                              </p>
+                          </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

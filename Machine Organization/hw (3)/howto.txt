@@ -1,0 +1,49 @@
+0. run the binary file ./0
+
+1. run ltrace ./1 and look at rand function output value, convert it to decimal and enter it in same command to get password. 
+A new number is generated every time the binary file is executed.
+
+2. run strace -f ./2 and look at the most recent process attached formatted as 
+"strace: Process XXXXXX attached" 
+that is your process ID (PID)
+
+3. run ltrace ./3 and look at __xstat() function. 
+The name of the file is in it as a string. 
+After that just make a directory with mkdir *filename here* and you get password when you run ./3
+
+4. using lab3 hints for homework, run ./4 . 
+It should give you an error lib361.so this is your library name. 
+The .so ending indicates that this is a dynamic library. 
+First you need to create a random .c file. I called mine sess4.c from lab4. 
+It can contain pretty much anything except for a main() function.
+
+Using the code from lab4:
+
+gcc -c -Wall -Werror -fpic sess4.c
+gcc -shared -o lib361.so sess4.o
+
+We also need to run a command to make sure binary 4 can access the shared library by:
+
+export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH
+
+After this command we can execute ./4 and we get our required function name which is secretoperation.
+After adding void secretoperation() function and compiling lab4 code again we get a new error:
+
+4.c:10: assert_xor: Assertion `result == ans' failed.
+
+From this error we can interpret that return result of secretoperation is an assert which is a boolean 
+in most cases and that a XOR bitwise operation is done on variables.
+We can then assume that we need atleast 2 variables as input and return them after applying a XOR operator on them.
+Since boolean type function don't exist in c and floats wouldnt make sense, we change our void type to int.
+
+we end up with something like:
+
+#include <stdio.h>
+
+int secretoperation(int x, int y){
+  return (x^y);
+}
+
+As our sess4.c file. We run our lab4 code again to update dynamic library and when we run ./4 again we should get secret.
+
+
